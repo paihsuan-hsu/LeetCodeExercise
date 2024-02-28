@@ -41,7 +41,7 @@ void backtrack(string numbers, string letters, vector<string> &output){
 vector<string> longestSubstringWithoutRepeatingCharacters(string numbers){
     string letters = "";
     vector<string> output;
-    backtrack(numbers, "", output);
+    backtrack(numbers, letters, output);
    
     return output;
 }
