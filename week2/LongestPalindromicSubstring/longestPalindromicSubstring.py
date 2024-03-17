@@ -18,7 +18,7 @@ class Solution:
         max_str=input[0]
         for i in range(len(input)):
             for j in range(i+max_len, len(input)):
-                if j-i > max_len and self.isPalindromic(input[i:j-i]):
+                if j-i > max_len and self.isPalindromic(input[i:j]):
                     max_len = j-i
                     max_str = input[i:j]
         return max_str
